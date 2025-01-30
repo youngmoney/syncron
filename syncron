@@ -2,7 +2,7 @@
 
 id_from_name() {
     name="$*"
-    echo ' # Crontab Installed With Build: '"${name}"
+    echo ' # Crontab Installed With SynCron: '"${name}"
 }
 
 install_cron() {
