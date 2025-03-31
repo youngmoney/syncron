@@ -44,7 +44,7 @@ edit_cron() {
             if [[ "${should}" =~ [Yy].* ]]; then
                 edit_file "${file}"
             fi
-        done 3< <(echo ~/.cron; ls ~/.local-dot/conf/*.cron 2>/dev/null)
+        done 3< <(echo ~/.cron; ls "~/$LOCALDOT/conf/*.cron" 2>/dev/null)
     else
         edit_file "${name}"
     fi
